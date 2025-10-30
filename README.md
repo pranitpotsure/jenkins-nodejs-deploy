@@ -71,4 +71,4 @@ Great base for migrating to a Declarative Jenkinsfile pipeline in the future.
 ## 👨‍💻 Author
 Pranit Potsure
 💼 DevOps Enthusiast | Cloud Learner
-🔗 LinkedIn Profile
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/pranit-potsure)
