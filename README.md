@@ -26,11 +26,12 @@ Each stage (job) in Jenkins performs a specific part of the deployment pipeline 
 ---
 
 ## 📸 Screenshots
+
 | Step | Description | Screenshot |
 |------|--------------|-------------|
-| ✅ | Jenkins Job List | ![Job List](./screenshots/job-list.png) |
-| 🧩 | Console Output | ![Console Output](./screenshots/console-output.png) |
-| 🌐 | Node.js App Deployed | ![App Deployed](./screenshots/deployed-app.png) |
+| 1️⃣ | Jenkins Job List | ![Job List](./img/Jenkins%20Job%20List.png) |
+| 2️⃣ | Console Output | ![Console Output](./img/Console%20Output.png) |
+| 3️⃣ | Node.js App Deployed | ![App Deployed](./img/Node.js%20App%20Deployed.png) |
 
 ---
 
