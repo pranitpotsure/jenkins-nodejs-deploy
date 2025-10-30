@@ -35,9 +35,40 @@ Each stage (job) in Jenkins performs a specific part of the deployment pipeline 
 ---
 
 ## 🪜 How It Works
-1. **Job 01-env-setup** installs Node.js:
-   ```bash
-   sudo apt update
-   sudo apt install -y nodejs npm
-   node -v
-   npm -v
+### 1. **Job 01-env-setup** installs Node.js:
+```
+  sudo apt update -y
+  #Install Node.js 
+  apt install nodejs -y
+  #Install npm
+ sudo apt install npm -y
+  #Install PM2 globally for Jenkins user
+ sudo npm install -g pm2 
+ ```  
+
+### 2. **Job 02-pull-repo** clones the project:
+
+```git clone https://github.com/iamtruptimane/node-js-app-CICD```
+
+
+### 3. **Job 03-install-deps** installs dependencies:
+```
+ cd "/var/lib/jenkins/workspace/02-pull-repo"
+ npm install
+```
+
+### 4. **Job 04-deploy-app** starts the application:
+```
+ cd "/var/lib/jenkins/workspace/02-pull-repo"
+ sudo pm2 start app.js --name node-app || sudo pm2 restart node-app
+```
+
+## 🎯 Outcome
+Fully automated Node.js app deployment through Jenkins Freestyle Jobs.
+Modular design — each job can be tested independently.
+Great base for migrating to a Declarative Jenkinsfile pipeline in the future.
+
+## 👨‍💻 Author
+Pranit Potsure
+💼 DevOps Enthusiast | Cloud Learner
+🔗 LinkedIn Profile
